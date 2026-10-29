@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="<?php echo $rootPath ?? ''; ?>ressources/css/reset.css">
     <link rel="stylesheet" href="<?php echo $rootPath ?? ''; ?>ressources/css/style.css">
     <?php if (isset($pageCss)) echo '<link rel="stylesheet" href="' . ($rootPath ?? '') . 'ressources/css/' . $pageCss . '">'; ?>
+    <link rel="stylesheet" href="<?php echo $rootPath ?? ''; ?>ressources/css/motion.css">
 </head>
 <body>
 

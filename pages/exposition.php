@@ -38,8 +38,21 @@ include '../includes/header.php';
             </p>
         </div>
         <div class="concept__media">
-            <div class="concept__placeholder"></div>
+            <img class="concept__placeholder" src="../ressources/images/expo/concept.jpg" alt="Le public réuni dans la cour de l'IUT">
         </div>
+    </div>
+</section>
+
+<!-- ── Aftermovie ── -->
+<section class="aftermovie">
+    <div class="aftermovie__inner">
+        <p class="section-label">Aftermovie</p>
+        <h2 class="section-title">Revivez les 18 &amp; 19 juin</h2>
+        <div class="aftermovie__player">
+            <video src="../ressources/video/aftermovie.mp4" poster="../ressources/video/aftermovie-poster.jpg"
+                   controls playsinline preload="none"></video>
+        </div>
+        <p class="aftermovie__credit">Montage : Luis Rivas · Images : Benjamin Renollet, Quentin Chillet · Drone : Quentin Chillet</p>
     </div>
 </section>
 
@@ -85,10 +98,10 @@ include '../includes/header.php';
     <div class="salles__grid">
         <?php
         $salles = [
-            ["num" => "Salle 021", "nom" => "Societ-e", "oeuvres" => ["Community", "Distorsion"], "img" => ""],
-            ["num" => "Salle 001", "nom" => "Horizon", "oeuvres" => ["Bon Profil", "Antithèse", "Beauté hors du cadre"], "img" => ""],
-            ["num" => "Salle 002", "nom" => "L'Envers du Décor", "oeuvres" => ["Tapis Rouge", "En Direct", "AD-HD"], "img" => ""],
-            ["num" => "Salle 005", "nom" => "La Pépinière", "oeuvres" => ["Lotus", "E-biscus", "Datura"], "img" => ""],
+            ["num" => "Salle 021", "nom" => "Societ-e", "oeuvres" => ["Community", "Distorsion"], "img" => "../ressources/images/expo/salle-societe.jpg"],
+            ["num" => "Salle 001", "nom" => "Horizon", "oeuvres" => ["Bon Profil", "Antithèse", "Beauté hors du cadre"], "img" => "../ressources/images/expo/salle-horizon.jpg"],
+            ["num" => "Salle 002", "nom" => "L'Envers du Décor", "oeuvres" => ["Tapis Rouge", "En Direct", "AD-HD"], "img" => "../ressources/images/expo/salle-envers.jpg"],
+            ["num" => "Salle 005", "nom" => "La Pépinière", "oeuvres" => ["Lotus", "E-biscus", "Datura", "DAHL-E-A"], "img" => "../ressources/images/expo/salle-pepiniere.jpg"],
         ];
         foreach ($salles as $salle) :
         ?>

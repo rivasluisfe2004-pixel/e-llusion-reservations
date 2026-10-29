@@ -415,3 +415,14 @@ section { padding: 80px 48px; }
     .footer__logos img:nth-child(2) { height: 80px; }
     .footer__logos img:nth-child(1) { bottom: 20px; }
 }
+
+/* ── Photos de l'expo ── */
+.salle-card__photo img,
+.oeuvre__media img,
+.concept__media img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+}
+

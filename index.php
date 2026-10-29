@@ -18,9 +18,22 @@ include 'includes/header.php';
         </div>
     </div>
     <div class="hero__carousel">
-        <span>Carrousel des groupes</span>
+        <video src="ressources/video/hero.mp4" poster="ressources/images/expo/hero-1.jpg"
+               muted loop playsinline data-autoplay aria-label="Images de l'exposition E-LLUSION"></video>
     </div>
 </section>
+
+<!-- ── Bandeau des œuvres ── -->
+<div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+        <?php
+        $noms = ["Community", "Distorsion", "Bon Profil", "Antithèse", "Beauté hors du cadre", "Tapis Rouge",
+                 "En Direct", "AD-HD", "Lotus", "E-biscus", "Datura", "DAHL-E-A"];
+        // deux fois la liste pour que la boucle soit continue
+        foreach (array_merge($noms, $noms) as $nom) echo '<span>' . $nom . '</span>';
+        ?>
+    </div>
+</div>
 
 <!-- ── Exposition ── -->
 <section class="exposition">
@@ -50,25 +63,25 @@ include 'includes/header.php';
                 "num"     => "Salle 021",
                 "nom"     => "Societ-e",
                 "oeuvres" => ["Community", "Distorsion"],
-                "img"     => ""
+                "img"     => "ressources/images/expo/salle-societe.jpg"
             ],
             [
                 "num"     => "Salle 001",
                 "nom"     => "Horizon",
                 "oeuvres" => ["Bon Profil", "Antithèse", "Beauté hors du cadre"],
-                "img"     => ""
+                "img"     => "ressources/images/expo/salle-horizon.jpg"
             ],
             [
                 "num"     => "Salle 002",
                 "nom"     => "L'Envers du Décor",
                 "oeuvres" => ["Tapis Rouge", "En Direct", "AD-HD"],
-                "img"     => ""
+                "img"     => "ressources/images/expo/salle-envers.jpg"
             ],
             [
                 "num"     => "Salle 005",
                 "nom"     => "La Pépinière",
-                "oeuvres" => ["Lotus", "E-biscus", "Datura"],
-                "img"     => ""
+                "oeuvres" => ["Lotus", "E-biscus", "Datura", "DAHL-E-A"],
+                "img"     => "ressources/images/expo/salle-pepiniere.jpg"
             ],
         ];
 

@@ -20,5 +20,6 @@
     </div>
 </footer>
 
+<script src="<?php echo isset($rootPath) ? $rootPath : ''; ?>ressources/js/motion.js"></script>
 </body>
 </html>
