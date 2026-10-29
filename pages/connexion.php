@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once __DIR__ . '/../includes/connexion_bdd.php';
 
 // Si déjà connecté, rediriger
 if (isset($_SESSION['connecte']) && $_SESSION['connecte'] == true) {
@@ -19,7 +20,7 @@ if (isset($_POST['email']) && isset($_POST['mdp'])) {
     $mdp   = $_POST['mdp'];
 
     // Compte administrateur (en attendant la BDD)
-    if ($email == 'admin' && $mdp == 'admin123') {
+    if ($email == 'admin' && $mdp === ADMIN_MDP) {
         $_SESSION['connecte'] = true;
         $_SESSION['role']     = 'admin';
         $_SESSION['prenom']   = 'Admin';

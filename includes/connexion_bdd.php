@@ -1,9 +1,17 @@
 <?php
-define('SERVEUR_BD', 'localhost');
-define('PORT_BD',    8889);
-define('LOGIN_BD',   'root');
-define('PASSE_BD',   'root');
-define('NOM_BD',     'sae-203');
+// En ligne : les identifiants vivent hors du dossier web (~/config_bdd.php).
+// En local : valeurs par défaut de MAMP.
+$config = __DIR__ . '/../../config_bdd.php';
+if (is_file($config)) {
+    require $config;
+} else {
+    define('SERVEUR_BD', 'localhost');
+    define('PORT_BD',    8889);
+    define('LOGIN_BD',   'root');
+    define('PASSE_BD',   'root');
+    define('NOM_BD',     'sae-203');
+    define('ADMIN_MDP',  'admin123');
+}
 
 $conn = mysqli_connect(SERVEUR_BD, LOGIN_BD, PASSE_BD, NOM_BD, PORT_BD);
 

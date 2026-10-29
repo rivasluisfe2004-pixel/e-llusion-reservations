@@ -279,7 +279,7 @@ if ($email_session != '' && $reference_session != '') {
                             </div>
                         </div>
                         <div style="margin-top:12px;display:flex;gap:12px">
-                            <button type="submit" class="btn-inscrip" style="padding:10px 20px;font-size:0.9rem">Enregistrer</button>
+                            <button type="submit" class="btn-inscrip" style="padding:10px 20px;font-size:0.9rem;background:var(--cyan-dark);color:var(--black);border:none;font-weight:bold;cursor:pointer">Enregistrer</button>
                             <button type="button" class="btn-outline btn-outline--small"
                                 onclick="cacherModif(<?php echo $rs['id_inscription']; ?>)">Annuler</button>
                         </div>
